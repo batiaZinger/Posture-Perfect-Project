@@ -1,0 +1,2 @@
+# Posture-Perfect-Project
+Client-server system development in Python (Flask) - server-side, and client-side on Angular 8, Database - SQL.  A site designed to improve the person's body language in a job interview and lecture. In the site, there is a visualization of work interview and lecture, the user just needs to upload the video, the server will then process the video and identify correct and incorrect movements. Finally, the system returns an answer with improvement notes
