@@ -1,0 +1,156 @@
+label {
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-size: 16px;
+  color: rgb(24, 58, 112);
+}
+
+.checkBox {
+  background-color: #3899eb;
+  border: 1px solid #3899eb;
+  color: #fff;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  font-size: 6px;
+  text-align: center;
+  line-height: 14px;
+  border-radius: 15px;
+  }
+
+a {
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-size: 16px;
+  align-items: center;
+  color: rgb(24, 58, 112);
+  cursor: pointer !important;
+  padding: 8px;
+  justify-content: center;
+  text-align: initial;
+  display: flex;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: 0 0;
+  pointer-events: auto;
+}
+
+a:hover {
+  color: rgb(24, 58, 112);
+}
+
+P {
+
+  color: rgb(24, 58, 112);
+  margin-bottom: 17px;
+  text-align: center;
+  font-size: 62px;
+  margin-bottom: 27px;
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-weight: 400;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+/* Full-width inputs */
+input[type="text"],
+input[type="password"] {
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  // border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login {
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-size: 16px;
+  color: #3899ec;
+  box-shadow: inset 0 0 0 1px #3899ec;
+  min-width: 168px;
+  transition: background-color 0.3s, color 0.3s, background 0.3s, box-shadow 0.1s ease-in-out;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 16px;
+  height: 43px;
+  padding-top: 8px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 999px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+button:disabled {
+  color: -internal-light-dark-color(graytext, rgb(170, 170, 170));
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:enabled {
+  border: solid rgba(17, 109, 255, 1) 1px;
+  background-color: rgba(17, 109, 255, 1);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  text-align: center;
+  display: block;
+}
+
+.container {
+  width: 360px;
+  padding: 16px;
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+  font-size: 16px;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+
+body{
+
+  margin: 2%
+}

@@ -1,0 +1,27 @@
+
+
+
+<!-- https://www.w3schools.com/howto/howto_css_login_form.asp   מכאן לקחתי את הקוד.....-->
+
+<form action="action_page.php" method="post">
+<P>Log In</P>
+  <div class="container">
+
+    <label for="uname"><b>User Name</b></label>
+    <input type="text" name="userName" [(ngModel)]="userName" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="userPassword" [(ngModel)]="userPassword" required>
+    <span style="color: red;"> {{a}}</span>
+
+    <button class="login" style="color: black;" (click)="login()" [disabled]='!userPassword'>Login</button>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" class="checkBox"><label for="rememberMe">Remember me</label> 
+    </label>
+  </div>
+
+  <div class="container" >
+    <span><a routerLink="/newUser">New User</a></span><br><br>
+  </div>
+</form>

@@ -1,0 +1,33 @@
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="navbar " >
+  <a routerLink="/welcome" target="_self" ><img src="../../../assets/logo.jpg"></a>
+  
+      <a routerLink="/login" target="_self" style="float: right;" class="aSignIn" >
+         <div  class="signin" >
+           <p >Sign In</p>       
+         </div>
+     </a>
+
+  
+      <div class="dropdown">
+        <button class="dropbtn">Study 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+        <a routerLink="/lecture" target="_self"> lecture</a>
+          <a routerLink="/workInterview" target="_self"> work interview</a>
+        </div>
+      </div> 
+
+     <a routerLink="/test" target="_self" >Test</a>
+
+      <a routerLink="/userProgress" target="_self" >User Progress</a>
+
+
+
+</div>
+  <router-outlet></router-outlet>
+

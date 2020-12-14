@@ -1,0 +1,56 @@
+
+<div class="font">
+  <h3>Here you can upload your file to the server</h3>
+  </div>
+
+<div class="uploadfilecontainer" (click)="fileInput.click()" appDragDrop (onFileDropped)="handleFileInput($event)">
+  <input accept="video/*" hidden type="file" #fileInput (change)="handleFileInput($event.target.files)">
+</div>
+
+
+
+<div class="files-list" *ngIf="fileToUpload">
+  <p>{{ fileToUpload.name }}</p>
+  <button class="delete-file" (click)="deleteAttachment(i)">
+    <img src="../../../assets/Recycle_Bin_Full.png">
+  </button>
+</div>
+
+<div style="left: 10px;">
+  <video [src]="url" *ngIf="format==='video' && url" height="200" controls></video> 
+  </div>
+
+  <button class="uploadFile" (click)='uploadFileToActivity()' [disabled]="!fileToUpload">Send to Server </button><br><br><br><br><br>
+  <div style="  border: 1px dashed;
+  border-radius: 12px;" class="results" *ngIf="r">
+      <ul>
+    <p><b>here is your results:</b></p>
+    <li>
+      <p>grade : {{grade |   number : '1.0'}}</p>
+    </li>
+    <li>
+      <p>remarks: {{remarks}}</p>
+    </li>
+    <li>
+      <p>path: {{path}}</p>
+    </li>
+    <li>
+      <p>result: {{result }}</p>
+    </li>
+  </ul>
+  </div>
+  
+
+<br>
+
+
+  <div style=" position: relative;left: 400px;">
+    <button  class="process" routerLink="/userDetails">See all your results in a table</button>
+  </div>
+  <div style="position: relative; left:  650px;">
+      <button  class="process" routerLink="/userProgress">See all your results in a chart</button>
+  </div>
+  <div style="position: relative; left: 900px;">
+      <button  class="process" routerLink="/displayVideo">Display yourself in action  </button>
+</div>
+

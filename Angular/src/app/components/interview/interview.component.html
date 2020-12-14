@@ -1,0 +1,66 @@
+<div  class="container" style="width: 100%;height: 100%; display: flex;direction: rtl;" >
+
+    <div class="studyDiv" style="position: absolute;"  >
+        <a style="position: relative;right:685px; font-size: 13.33;" routerLink="/test" type="button" class="start">
+            Finish interview
+        </a>
+        <div style="position: relative;right:700px;"  ><button [disabled]="middle=='1'" 
+            (click)="startInterview(0)" class="start">Show Questions </button></div>
+    </div>
+    
+    <div  style="position: relative;right: 100px;" style="width: 60%;height: 100%;"> 
+        <div  class="containerCammera">
+            <app-api style="height: 70%;  margin: 50px;"></app-api>
+        </div>         
+    </div>
+    <div style="width: 47%;height: 100%;display: flex;flex-direction: column; "> 
+        <br>    <br> <br> <br> 
+
+        <div class="containerInterview" style="display: flex;flex-direction: column;"> 
+          
+            <div *ngFor="let question of arrQuestionInterview;let i=index">
+        
+                <div style="display: flex;" class="qustion" >
+                
+                    <div class="typewriter" style="height: 40px;line-height: 40px;" >
+                        <h1>{{question.txt}}</h1>
+                    </div>
+                    <img (click)="endQuestion()" src="assets/user.png" width="32" height="32" style="position: absolute;left:5px">
+                </div>
+
+                <div style="display: flex;" *ngIf="arrAnswerInterview[i]" class="qustion"  >
+
+                            <div   class="lds-ellipsis " [ngClass]="arrAnswerInterview[i].taking==true?'':'stop'"  id="dots">
+                               <div></div><div></div><div></div><div></div>
+                          </div>
+                    
+                          <img src="assets/man_(1).png" width="32" height="32"  style="position: absolute;left:5px">
+                          
+                       
+                       <button [disabled]="continuei>i-1"  style="position: relative;left:51px;" (click)="continue(i)" class="co" >Continue</button>
+                </div>
+            </div>
+           
+        </div>
+    <div *ngIf="p" >
+        <div  class="popup" (click)="myFunction()">
+            <h3 style="  color: rgba(17, 109, 255, 1) ;">Instructions</h3>
+            <span class="popuptext" id="myPopup">First Press on Record and then press show questions <br> when you are done press stop <br> To download press the download button and then Finish interview 
+                <ul>
+                    <li>Press on Record to start recording  </li>
+                    <li>then press show question to begin the interview</li>
+                    <li>when you are done press stop to stop the recording</li>
+                    <li>To download press the download button and then Finish interview </li>
+                </ul>
+            </span>
+          </div>
+    </div>
+        
+
+    </div> 
+   
+</div>
+
+
+
+

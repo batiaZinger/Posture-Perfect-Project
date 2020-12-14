@@ -1,0 +1,525 @@
+<div style="text-align: center" id="pagelearn" dir="ltr">
+  <button class="flag" style="  background-image: url('../../../assets/israel-flag-icon-free-download.jpg');  " (click)=Hebrew()></button>
+  <br>
+  <button class="flag" style="  background-image: url('../../../assets/usaflag.jpg'); " (click)=English()></button>
+
+
+  <div *ngIf="hebrew">
+    <div class="sidenav">
+      <br>
+      <a (click)="getChatMessages(15)">עמידה</a> <br>
+      <a (click)="getChatMessages(16)">נוכחות בקהל</a> <br>
+      <a (click)="getChatMessages(17)">ביטחון</a> <br>
+    </div>
+
+
+    <h2>שפת גוף בהרצאה/שיעור</h2>
+    <div class="lesson" id="15">
+
+      <table style="height:200px">
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/miguel-henriques-RfiBK6Y_upQ-unsplash.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              עמידת המרצה מול הקהל: יציבה זקופה, בטוחה, פנים ערניות, מבט מופנה אליהם ויוצר עמם קשר עין תמידי, אלו מרכזים
+              את הקהל אליו<br>
+              יש להקפיד על התאמה בין שפת הדיבור לשפת הגוף.סתירה ביניהם יוצרת בלבול וחוסר אמינות<br>
+              פיזור המבט מסייע בהעברת התחושה שלכל אחד מהנוכחים בחדר יש חשיבות<br>
+              .כאשר אחד המשתתפים מהקהל פונה למרצה בשאלה, עליו לפנות אליו בכל הגוף,<br>
+              דבר המעיד על הקשבה ותשומת לב מלאה, ולא בהפניה של מחצית גופו, דבר המעיד על הקשבה כלאחר יד<br>
+              <br>
+              .לידיים תפקיד חשוב בשיח ושיג עם הקהל,אלו תנועות הידיים שמומלץ להימנע מהן<br>
+              :הנחת ידיים על המותנים כהבעה של חוסר שביעות רצון, זו תנועה מתנשאת וביקורתית<br>
+              החזקת ידיים בצורה רפויה לצידי הגוף, מעידה על עייפות, שעמום, אכזבה<br>
+              .הסתרת ידיים מאחורי הגב מעידה על ביקורתיות ועל הסתרה<br>
+              ,הטמנת ידיים בכיסים מעבירה מסר של חוסר אכפתיות, אדישות וזלזול<br>
+              .ידיים חסרות מנוחה, המתעסקות בחפצים שעל השולחן, מעבירים מסר של עצבנות וחוסר שליטה<br>
+              .מומלץ לשמור על תנועות ידיים אפקטיביות, כשהידיים בגובה שבין המותנים לכתפיים<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <br><br><br><br><br><br>
+
+      <mat-radio-group *ngIf="entries[15]" [(ngModel)]="entries[15][2]">
+        <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(15,3)">סיים
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(15,2)">באמצע
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(15,1)">התחיל
+        </mat-radio-button>
+
+      </mat-radio-group>
+      <br><br>
+    </div>
+
+    <div class="lesson" id=16>
+      <table style="height:200px">
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/product-school-ZLdKgqJeERM-unsplash.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              עמוד זקוף. תנוחה לקויה - כתפיים שמוטות, בטן בולטת - אינה רק לא בריאה פיזית,<br>
+              אלא היא יכולה להעביר מגוון שלם של עמדות ומדרגות של עניין וכבוד.<br>
+              הימנע מקיפול הזרועות, עמידה מאחורי שולחן ושימוש בחסמים. התנהגויות אלה זה חוסם אותך וגורם לך להיראות בלתי
+              ניתנת לגישה<br>
+              . אל תחצה את זרועותיך או תערער את הניירות הקשורים לשיעור, והימנע מלהביט בשעון שלך כאשר ילד מדבר.<br>
+              השתמש בכיתה כולה. הסתובב בשולחנות התלמידים כדי לגלות עניין, והצביע על אישור בהנהון ראש.<br>
+              <br>
+              היה מודע להבעות הפנים שלך (או להיעדרן!). הם יכולים להעביר בקלות כל מספר של מצבי רוח וגישות, כמו גם הבנה או
+              בלבול.<br>
+              חיוך. זה משדר אושר ועידוד. עצוב או חרטה של ​​פרון מראים. עיניים גדולות ופקוחות מרמזות על פחד. פרצוף מונפש
+              מושך את המאזין פנימה.<br>
+              ליצור קשר עין. זה עוזר לבסס קרבה ואמון, וזה מראה שאתה מאורס ומקשיב לתלמידים.<br>
+              <br>
+              אמצו תנוחות שונות כאשר אתם רוצים שהתלמידים שלכם יגיבו בצורה מסוימת.<br>
+              היד שלך על סנטר מעודדת את התלמידים לחשוב על התשובה ומציגה את ההמתנה לתשובה שלהם.<br>
+              הושטת הידיים ותחת כפות הידיים מופעים שפתוחים לשאלות ומענה בצורה לא מאיימת.<br>
+              שימו לב לזמן ההמתנה - אל תנעו מבט ותמהרו. נראה רגוע ומוכן להקשבה.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <br><br><br><br><br><br>
+
+      <mat-radio-group *ngIf="entries[16]" [(ngModel)]="entries[16][2]">
+        <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(16,3)">סיים
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(16,2)">באמצע
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(16,1)">התחיל
+        </mat-radio-button>
+
+      </mat-radio-group>
+      <br><br>
+    </div>
+
+    <div class="lesson" id=17>
+      <table style="height:200px">
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/download-1.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              גלגל את הכתפיים לאחור, נטע בחוזקה את כפות הרגליים, פתח את החזה ושמור על הראש למעלה.<br>
+              ככל שגופכם נראה בטוח יותר, כך תיתפסו בטוחים יותר. זה נקרא כוח גוף גבוה - תופס מקום עם גופך.<br>
+              כשאתה מלמד, השאר את הידיים רופפות, גלגל את הכתפיים לאחור ושמור על הראש למעלה.<br>
+              זה יעזור לך לתבוע את החדר ולהחזיק בחומר שלך<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <br><br><br><br><br><br>
+
+      <mat-radio-group *ngIf="entries[17]" [(ngModel)]="entries[17][2]">
+        <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(17,3)">סיים
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(17,2)">באמצע
+        </mat-radio-button>
+        <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(17,1)">התחיל
+        </mat-radio-button>
+
+      </mat-radio-group>
+      <br><br>
+    </div>
+  </div>
+
+  <div *ngIf="english">
+    <div class="sidenav">
+      <br>
+      <a (click)="getChatMessages(18)">why is important</a> <br>
+      <a (click)="getChatMessages(19)">Standing correctly</a> <br>
+      <a (click)="getChatMessages(20)">Winner Body Language</a> <br>
+      <a (click)="getChatMessages(21)">Confidence</a> <br>
+      <a (click)="getChatMessages(22)">Showing Your Hands </a> <br>
+      <a (click)="getChatMessages(23)"> Best posture </a> <br>
+      <a (click)="getChatMessages(24)"> Small-scale movements </a> <br>
+      <a (click)="getChatMessages(25)"> Eye contact </a> <br>
+
+    </div>
+    <h1>Here You Can Learn How To Best Use Your Body <br>
+      When Giving A Lecture</h1>
+    <div class="lesson" id=18>
+      <table style="height:200px">
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/audience.jpg" width="304" height="228"><br>
+            <img src="assets/lecture/miguel-henriques-RfiBK6Y_upQ-unsplash.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <div>
+              <p>
+                Why is body language important?<br>
+                Body language greatly affects how your lecture or interview is received. Good body language makes a
+                positive impression on your audience. <br>
+                Bad body language can make a negative impression on your audience. You can even say that having the
+                wrong
+                body language ensures that your talk almost can’t be a success. <br>
+                You need a lot of talent on other elements to make up for bad body language.<br>
+              </p>
+              <h2>What not to do:</h2>
+              <p>
+                Some examples of bad body language include: <br>
+                - Turning your back to the audience,<br> - Moving around too much <br> - Hiding behind something.<br>
+                Gesturing also can have a bad influence on your talk. Being too aggressive in your gestures,
+                drumming your fingers or even biting your nails are also bad examples.<br>
+                <br>
+                But even when you aren’t doing a bad job,<br>
+                improving your body language can have a big effect, especially on the way
+                the audience receives your talk.<br>
+                It can make a difference between just a nice talk and actually persuading people. <br>
+                This is why it is important for you to pay attention to your body language.<br>
+              </p>
+            </div>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[18]" [(ngModel)]="entries[18][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(18,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(18,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(18,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id=19>
+      <table style="height:200px">
+        <h2>Standing correctly</h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/download-1.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              When athletes win a race, their body language is more expansive and when athletes lose a race,their body
+              language is more defeated and down.<br>
+              Want to look like a winner?<br> Roll your shoulders back,
+              firmly plant your feet, open your chest and keep your head up. The more confident your body looks,<br>
+              <br>
+              the more confident you will be perceived as. This is called high body power–taking up space with your
+              body.
+              <br>
+              When teaching, keep your arms loose, roll your shoulders back and keep your head up.<br>
+              This will help you claim the room and own your material.<br>
+              <br>
+              Another interesting study at Harvard Business School had candidates do mock-interviews.<br>
+              The researchers had participants assume high body power before they walked into the room. <br>
+              Those who power posed were rated as more confident, intelligent and skilled.<br>
+              Most importantly, those candidates FELT MORE POWERFUL! <br>
+              So before you film a course or walk into a classroom do a little power posing. <br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[19]" [(ngModel)]="entries[19][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(19,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(19,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(19,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id=20>
+      <table style="height:200px">
+        <h2>Winner Body Language:</h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/imoji.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              Some examples of bad body language include: turning your back to the audience, <br>
+              moving around too much or hiding behind a desk. Gesturing also can have a bad influence on your talk.
+              <br>
+              Being too aggressive in your gestures, drumming your fingers or even biting your nails are also bad
+              examples.<br>
+              But even when you aren’t doing a bad job, improving your body language can have a big effect.<br>
+              Especially on the way, the audience receives your talk.<br>
+              It can make a difference between a nice talk and actually persuading people.<br>
+              This is why it is important for everyone to
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[20]" [(ngModel)]="entries[20][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(20,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(20,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(20,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id=21>
+      <table style="height:200px">
+        <h2>Confidence</h2>
+
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/product-school-ZLdKgqJeERM-unsplash.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              Our hands are our trust indicators. This means that when other people can’t see our hands,<br>
+              they have trouble trusting us. Whenever you are teaching–in front of a classroom or on camera <br>
+              you always want to have your hands visible. <br>
+              Keep them out of your pockets, don’t put them behind your back or under a desk and on camera <br>
+              be sure to get your whole body in the shot.<br>
+              <br>
+              Nonverbal Hooks: <br>
+              Typically there is very low retention rates on verbal material.<br>
+              You need to hook the brain into remembering your content with nonverbal and verbal explanations. <br>
+              Try to think of ways you can explain your concepts using your hands, <br>
+              your voice or your body.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[21]" [(ngModel)]="entries[21][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(21,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(21,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(21,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id=22>
+      <table style="height:200px">
+        <h2>Showing Your Hands</h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="assets/lecture/product-school-lVTtqIY6pL0-unsplash.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              Our hands are our trust indicators.<br>
+              This means that when other people can’t see our hands,<br>
+              they have trouble trusting us. <br>
+              Whenever you are teaching–in front of a classroom or on camera you always want to have your hands
+              visible.<br>
+              Keep them out of your pockets, don’t put them behind your back or<br>
+              under a desk and on camera be sure to get your whole body in the shot. <br>
+              Crossed arms might indicate that a person feels defensive, self-protective, or closed-off.<br>
+              <br>
+              Standing with hands placed on the hips can be an indication <br>
+              that a person is ready and in control, or it can also possibly be a sign of aggressiveness.<br>
+              Clasping the hands behind the back might indicate that a person is feeling bored, anxious, or even
+              angry.<br>
+              Rapidly tapping fingers or fidgeting can be a sign that a person is bored, impatient, or frustrated.<br>
+              Crossed legs can indicate that a person is feeling closed off or in need of privacy. <br>
+              <br>
+              pen posture involves keeping the trunk of the body open and exposed.<br>
+              This type of posture indicates friendliness, openness, and willingness
+              Closed posture- involves hiding the trunk of the body often by hunching forward <br>
+              and keeping the arms and legs crossed. <br>
+              This type of posture can be an indicator of hostility, unfriendliness.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[22]" [(ngModel)]="entries[22][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(22,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(22,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(22,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id=23>
+      <table style="height:200px">
+        <h2>best posture</h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="/assets/Screen_Shot_2020-05-03_at_17.45.08.png" width="170" height="300"><br>
+          </th>
+          <th>
+            <p>
+              Page upright. A poor posture - lowered shoulders, protruding belly <br>
+              is not only physically unhealthy, but can convey a whole range of attitudes and virtues of interest and
+              respect.<br>
+              Avoid folding your arms, standing behind a desk and using barriers. <br>
+              These behaviors "just send the signal you don't want to contact.<br>
+              " It blocks you and makes you look inaccessible. Do not cross your arms or shuffle unrelated papers and
+              avoid looking at your watch when a child speaks.<br>
+              Be aware of your facial expressions (or lack thereof!).<br>
+              They can easily convey any number of moods and attitudes, <br>
+              as well as understanding or confusion.<br>
+              <br>
+              smile. It conveys happiness and encouragement. Seeds show sadness or anger. <br>
+              Big, open eyes indicate fear. An animated face pulls the listener in.<br>
+              Make eye contact. It helps establish rapport and trust, and it shows that you are engaging and listening
+              to
+              students.<br>
+              Adopt different positions when you want your students to respond in a certain way.<br>
+              Your hand on the chin encourages students to think about the answer and shows that you are waiting for
+              their
+              answer.<br>
+              Hands and hands show that you are open to non-threatening questions and answers.<br>
+              Pay attention to the wait time - do not take a look and hurry. Looks calm and ready to listen.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[23]" [(ngModel)]="entries[23][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(23,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(23,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(23,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <br>
+    <div class="lesson" id="24">
+      <table style="height:200px">
+        <h2>Small-scale movements</h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="/assets/lecture6.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              It has been suggested that two-thirds of our communication is nonverbal.<br>
+              Between head nods, smiles, frowns, closed postures, head tilts,<br>
+              raised hands and excited pacing, teachers, and students send hundreds of non-verbal cues to one another
+              daily.<br>
+              Positive body language in a classroom setting has the ability to motivate, inspire and engage. <br>
+              It can not only give you the confidence you need to teach<br>
+              but can also reassure your students that you actually know what you’re talking about. <br>
+              It can even make your students feel safe and confident enough to participate in the lessons more
+              frequently.<br>
+              <br>
+              Most leadership positions encourage body language that exudes power and confidence. <br>
+              Cues include standing tall, gesturing only from the waist up, <br>
+              keeping palms down and head straight and forward, and speaking with control. <br>
+              Think about a politician delivering an election speech.<br>
+              <br>
+              But when teaching, the nonverbal cues need to communicate a different type of leader.<br>
+              These cues convey warmth and empathy,<br>
+              reminding your students that you are approachable and there to help them grow.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[24]" [(ngModel)]="entries[24][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(24,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(24,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(24,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <div class="lesson" id="25">
+      <table style="height:200px">
+        <h2> Eye Contact
+        </h2>
+        <tr style="vertical-align:top">
+          <th>
+            <img src="/assets/images-12.jpg" width="304" height="228"><br>
+          </th>
+          <th>
+            <p>
+              One of the best ways to connect with our students and keep their focus. <br>
+              Hold your gaze with one student for about 15-30 seconds before changing to another student.<br>
+              Your students are likely to pay more attention when they know you’re speaking directly to them.<br>
+              It also helps them feel seen.<br>
+              <br>
+              Be Expressive and Use Gestures<br>
+              Inspire students to become involved with the lesson.<br>
+              Hook their brains. Retention rates are low on verbal material but increase<br>
+              when you add in memorable nonverbal cues for the brain to file away as an association.<br>
+              <br>
+              Keep Your Arms Open<br>
+              An open body position signals an invitation. <br>
+              It welcomes brainstorming and new ideas.<br>
+              It also draws your students’ attention to you and thus they will be more likely to hear what you have to
+              say.<br>
+            </p>
+          </th>
+        </tr>
+      </table>
+      <div>
+        <mat-radio-group *ngIf="entries[25]" [(ngModel)]="entries[25][2]">
+          <mat-radio-button class="container" [value]=1 [name]="begin" (change)="radioButtonChanged(25,1)">Start
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=2 [name]="middle" (change)="radioButtonChanged(25,2)">Middle
+          </mat-radio-button>
+          <mat-radio-button class="container" [value]=3 [name]="finish" (change)="radioButtonChanged(25,3)">Done
+          </mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <br><br>
+
+    </div>
+
+    <h2>
+      To add knowledge on this topic:
+    </h2>
+
+    <a target="_blank" href="http://www.nea.org/tools/52227.htm">body language on lecture</a><br>
+    <a target="_blank"
+      href="https://www.scienceofpeople.com/body-language-for-teachers/#:~:text=Roll%20your%20shoulders%20back%2C%20firmly,and%20keep%20your%20head%20up.">body-language-for-teachers</a><br>
+    <a target="_blank" href="https://www.speakwithpersuasion.com/learn/body-language/">body language for
+      lecturer</a><br>
+    <a target="_blank"
+      href="https://www.verywellmind.com/understand-body-language-and-facial-expressions-4147228">understand-body-language-and-facial-expressions</a><br>
+    <br>
+    <br>
+
+  </div>
+
+</div>
+<button (click)="topFunction()" id="myBtn" title="Go to top">Top &uarr;</button>

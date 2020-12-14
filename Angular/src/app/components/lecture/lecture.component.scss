@@ -1,0 +1,233 @@
+.th {
+  font-weight: 0.1px;
+}
+.table {
+  font-weight: 10px;
+}
+body {
+  margin-top: 10px;
+}
+
+
+.flag {
+  background-image: url("../../../assets/israel-flag-icon-free-download.jpg");
+  background-size: cover;
+  width: 45px;
+  height: 30px;
+  margin-left: 80%;
+  border: none;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.flag button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: white;
+  font-size: 7px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.flag button:hover {
+  background-color: black;
+}
+
+p {
+  font-weight: normal;
+  font-size: 17px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: rgb(19, 49, 97);
+  margin-bottom: 20px;
+}
+
+.lesson {
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: thin;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1030px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.lesson p {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  text-align: center;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  float: right;
+}
+
+.lesson:hover {
+  box-shadow: 10px 10px 10px 10px #ccc;
+  -moz-box-shadow: 10px 10px 10px 10px #ccc;
+  -webkit-box-shadow: 10px 10px 10px 10px #ccc;
+  -khtml-box-shadow: 10px 10px 10px 10px #ccc;
+}
+
+.check {
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  border-style: ridge;
+  margin: auto;
+  border-width: medium;
+}
+
+#myBtn {
+  // display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(17, 109, 255, 1); /* Set a background color */
+  border: solid rgba(17, 109, 255, 1) 1px;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgb(54, 130, 253); /* Set a background color */
+}
+
+#test {
+  background-color: rgb(54, 130, 253); /* Set a background color */
+  width: 450px;
+}
+
+#more {
+  display: none;
+}
+
+#read {
+  background-color: lightblue;
+}
+
+.show-less {
+  height: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+#ques {
+  cursor: pointer; /* Add a mouse pointer on hover */
+  background-color: green; /* Set a background color */
+  color: white; /* Text color */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  width: 150px;
+  height: 100;
+}
+
+#question {
+  display: none;
+}
+
+//* The container */
+.container {
+  // display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.sidenav {
+  width: 180px;
+  height: 100%;
+  position: sticky;
+  top: 97px;
+  position: fixed;
+  border-style: solid;
+  border-color: lightgray;
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}

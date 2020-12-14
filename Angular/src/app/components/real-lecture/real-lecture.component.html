@@ -1,0 +1,49 @@
+
+<div class="container" style="width: 100%;height: 100%; display: flex;direction: ltr;" >
+  
+    <div  style="position: absolute;" style="width: 35%;height: 100%;"> 
+        
+        <div  class="containerCammera">
+            <app-api style="margin: 40px;margin-left: 1px; " ></app-api>
+        </div>
+    </div>
+    
+    <div style="width: 65%;height: 100%;display: flex;flex-direction: column;"> 
+        <div *ngIf="p" >
+            <div  class="popup" (click)="myFunction()">
+                <h3 style="  color: rgba(17, 109, 255, 1) ;">Instructions</h3>
+                <span class="popuptext" id="myPopup">
+                    <ul>
+                        <li>Press on Record to start recording  </li>
+                        <li>then press Start lecture</li>
+                        <li>when you are done press stop to stop the recording</li>
+                        <li>To download press the download button and then Finish lecture </li>
+                    </ul>
+                </span>
+              </div>
+        </div>
+        <div class="div" style="position: relative;left:10px;bottom: 10px;" >
+            <br>
+            <div  style="display: flex;" >
+                <button style="color: rgba(17, 109, 255, 1);" (click)="toggleVideo()" class="start">Start lecture</button></div>
+                <div class="studyDiv">
+                <a style="position: relative;right:240px; color: rgba(17, 109, 255, 1);" routerLink="/test" type="button" class="start">
+                    Finish Lecture
+                </a>
+            </div>
+        </div>
+        <div class="containerInterview" style="display: flex;flex-direction: row;">   
+        <br>
+        <br>
+        <br>
+    <div  style="display: flex;" class="video" style="text-align: center;">
+       <div *ngIf="show">
+        <video  width="1000px"  controls (click)="toggleVideo()" #videoplayer>
+            <source src="assets\lecture.mp4" type="video/mp4"  />
+        </video>
+    </div>
+    </div>
+    </div>
+    </div> 
+    
+</div>

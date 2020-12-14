@@ -1,0 +1,68 @@
+<div style="text-align: center;">
+    <div class="font">
+        <h2>You have reached the stage of the test
+        </h2>
+        <p>
+            choose the topic:
+        </p>
+
+        <div>
+            <mat-radio-group>
+                <div style="position: relative;right: 45px;">
+                    <mat-radio-button class="choose" [value]=1 [name]="lecture" (change)="lecture()">lecture
+                    </mat-radio-button> <br>
+                    <br>
+                </div>
+                <mat-radio-button [value]=2 [name]="work" (change)="work()">work inteview
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="studyDiv">
+            <div class="remarks" *ngIf="w">
+                <p>
+                    Dear Interviewee <br>
+                    Here are some important instructions for the interview<br>
+                    to reach the maximum results:<br>
+                    Make sure you sit in front of a smooth, white background.<br>
+                    Be sure to look directly at the camera.<br>
+                    Good Luck!!!<br>
+                </p>
+                <div class="flex-conteiner">
+                    <a routerLink="/FileUpload" class="astudy" id="margin">
+                        File Upload
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <a routerLink="/interview" class="astudy">
+                        Start interview
+                    </a>
+                </div>
+            </div>
+
+            <div class="remarks" *ngIf="l">
+                <p>
+                    Dear lecturer<br>
+                    You are about to start a lecture. <br>
+                    Pay attention to some important things
+                 to achieve the desired result:<br>
+                    Keep an eye on the screen for the audience.<br>
+                    Also, as you move, make sure that the camera can see you<br>
+                    Make sure the background behind you is clean and empty.<br>
+                    Good Luck!!!<br>
+                </p>
+                <div class="flex-conteiner">
+                    <a routerLink="/FileUpload" class="astudy" id="margin">
+                        File Upload
+                    </a>
+
+                    <a routerLink="/realLecture" type="button" class="astudy">
+                        Start lecture
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</div>

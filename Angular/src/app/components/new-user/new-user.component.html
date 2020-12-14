@@ -1,0 +1,44 @@
+
+<form action="/action_page.php">
+
+<!-- <form action="/action_page.php" method="post" [formGroup]="userEmails"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <p>Sign Up</p>
+
+    <div class="input-container">
+        <div class="form-group">
+        <!-- <i class="fa fa-envelope icon"></i> -->
+        <input  class="input-field" type="text" placeholder="Email" name="mail" [(ngModel)]="mail" >
+        <!-- <input id="emailAddress" type="email" size="64" maxLength="64" required
+          placeholder="username@beststartupever.com" pattern=".+@beststartupever.com"
+          title="Please provide only a Best Startup Ever corporate e-mail address"> -->
+        <!-- <input class="input-field" [class.is-invalid]="primEmail.invalid && primEmail.touched" type="text" 
+        placeholder="Email" name="mail" [(ngModel)]="mail" formControlName="primaryEmail" required>
+    
+        <div *ngIf="(primEmail.invalid && primEmail.touched) || primEmail.dirty">
+            <small *ngIf="primEmail.errors?.required" class="text-danger" style="color: red;">Primary email is required</small>
+            <small *ngIf="primEmail.errors?.pattern" class="text-danger" style="color: red;">Please provide a valid email address</small>
+        </div> -->
+    
+
+      <!-- <i class="fa fa-user icon"></i> -->
+      <input class="input-field" type="text" placeholder="UserName" name="name" [(ngModel)]="name">
+  
+
+      <!-- <i class="fa fa-key icon"></i> -->
+      <input class="input-field" type="password" placeholder="Password" name="password"  [(ngModel)]="password">
+    </div>
+    </div>
+  
+    <button type="submit" class="btn" (click)="addUser(mail,name,password)" >Register</button>
+    <a routerLink="/login" target="_self">Already have an account? Log In</a>
+
+
+  </form>
+
+ 
+
+    
+
+ 

@@ -1,0 +1,43 @@
+<table>
+  <tr>
+    <th *ngFor="let col of columns">
+      {{col}}
+    </th>
+  </tr>
+  <tr *ngFor="let i of lenth ">
+    <td>
+      {{arrDate[i]}}
+    </td>
+    <td>
+      {{arrRemarks[i]}}
+    </td>
+    <td>
+      {{arrScore[i]}}
+    </td>
+    <td>
+      {{arrFace[i]}}
+    </td>
+    <td>
+      {{arrEye[i]}}
+    </td>
+    <td>
+      {{arrSmile[i]}}
+    </td>
+    <td>
+      {{arrHand[i]}}
+    </td>
+    <td>{{arrVideo[i]}}<button (click)="showVideo(arrVideo[i])">
+        see the video
+      </button>
+    </td>
+  </tr>
+</table>
+
+<div *ngIf="show">
+    <div class="video" *ngIf="show">
+      <video controls (click)="toggleVideo()" #videoplayer>
+        <source src={{videoPath}} type="video/webm" />
+        Browser not supported
+      </video>
+    </div>
+</div>

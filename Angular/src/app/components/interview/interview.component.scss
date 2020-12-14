@@ -1,0 +1,275 @@
+a:hover , button:hover{
+  color: rgb(19, 49, 97);
+
+}
+
+.lds-ellipsis {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 86px;
+  right: 375px;
+  bottom: 20px;
+}
+#dots.style {
+  line-height: 20px;
+}
+element.style {
+  position: relative;
+  right: 45px;
+  bottom: 20px;
+}
+.studyDiv {
+  color: rgba(17, 109, 255, 1);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(24, 58, 112);
+  text-align: center;
+  font-family: HelveticaNeueW01-Thin, HelveticaNeueW02-Thin, HelveticaNeueW10-35Thin, sans-serif;
+}
+
+.co {
+  width: 60px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: solid rgba(17, 109, 255, 1) 1px;
+  cursor: pointer !important;
+  text-align: initial;
+  display: flex;
+  border-radius: 38px 38px 38px 38px;
+  text-decoration: none;
+  pointer-events: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.start {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: rgba(17, 109, 255, 1);
+  border: solid rgba(17, 109, 255, 1) 1px;
+  cursor: pointer !important;
+  // text-align: initial;
+  display: flex;
+  border-radius: 38px 38px 38px 38px;
+  text-decoration: none;
+  pointer-events: auto;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 15px;
+
+}
+
+
+.done {
+  width: 120px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: solid rgba(17, 109, 255, 1) 1px;
+  cursor: pointer !important;
+  text-align: initial;
+  display: flex;
+  border-radius: 38px 38px 38px 38px;
+  text-decoration: none;
+  pointer-events: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(17, 109, 255, 1);
+}
+
+// .containerCammera{
+//     height: 90%;
+//     width: 75%;
+//     margin: 50px;
+//     border: 1px solid #b2b2ec;
+// }
+.qustion {
+  position: relative;
+  height: 32px;
+  width: 70%;
+  background: #b8bbbb4a;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: black;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis:not(.stop) div:nth-child(1) {
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis:not(.stop) div:nth-child(2) {
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis:not(.stop) div:nth-child(3) {
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis:not(.stop) div:nth-child(4) {
+  animation: lds-ellipsis3 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.typewriter h1 {
+  position: relative;
+  right: 60px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 12px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: lightblue;
+  }
+}
+
+.stop div[_ngcontent-yyp-c1]:nth-child(1) {
+  animation: none !important;
+}
+
+.stop div[_ngcontent-yyp-c1]:nth-child(2) {
+  animation: none !important;
+}
+.stop div[_ngcontent-yyp-c1]:nth-child(3) {
+  animation: none !important;
+}
+.stop div[_ngcontent-yyp-c1]:nth-child(4) {
+  animation: none !important;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 270px;
+  background-color: rgb(24, 58, 112);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 5%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

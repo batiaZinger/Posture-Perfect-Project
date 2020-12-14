@@ -1,0 +1,15 @@
+<div style="margin-left: 13%;">
+	  <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+</div>
+
+<div class="flex-conteiner">
+	<button (click)="showVideo()">show video</button>
+	<div class="video" *ngIf="show">
+		<video controls (click)="toggleVideo()" #videoplayer>
+			<source src={{videoPath}} type="video/webm" />
+			Browser not supported
+		</video>
+	</div>
+</div>
+
+

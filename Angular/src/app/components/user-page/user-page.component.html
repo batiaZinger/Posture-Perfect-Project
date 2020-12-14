@@ -1,0 +1,26 @@
+<p> {{userName}} welcome to Perfect Posture</p>
+<p>here you can improve your body language</p>
+<div class="flex-conteiner">
+    <a (click)="openDiv()" target="_self" style="float: right;" class="getStarted">
+        Start learning
+    </a>
+    <a routerLink="/test" target="_self" style="float: right;" class="getStarted">
+        Start test
+    </a>
+    <br>
+
+</div>
+<div class="flex-conteiner" *ngIf="study" >
+    <a routerLink="/workInterview" target="_self" style="float: right;" class="astudy" >
+        <div  class="studyDiv" >
+          Work Interview       
+        </div>
+    </a><br>
+    <a routerLink="/lecture" target="_self" style="float: right;" class="astudy" >
+        <div  class="studyDiv" >
+          Lecture       
+        </div>
+    </a>
+</div>
+
+<router-outlet></router-outlet>
